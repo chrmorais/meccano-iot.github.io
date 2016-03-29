@@ -6,15 +6,18 @@
 <title>Meccano</title>
 <!--CSS-->
 <link href="css/bootstrap.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+<link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" >
 <link href="css/estilo.css" media="screen, projection" rel="stylesheet" type="text/css">
 <!--//CSS-->
-<!--JS-->
+<!--JS lib-->
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!--//JS-->
+<!--//JS lib-->
 </head>
 
 <body>
 	<section class="topo">
+		<div class="lateral"></div>
 		<div class="ribbon">
 			<a href="http://github.com/meccano-iot/">Fork me on GitHub</a>
 		</div>
@@ -143,14 +146,35 @@
 			<p>Docker containers, for quick deployment</p>
 			<p><a href="http://hub.docker.com/u/meccano/">http://hub.docker.com/u/meccano/</a></p>
 		</div>
-	</section>
-	<section class="footer">
-		<div class="col-md-12">
-			<div class="mini-logo-white">
-				<img src="img/meccano-mini.png">
+		<div class="linha col-md-12"></div>
+		<div class="overview subscribe col-md-12">
+			<h2><i class="fa fa-paper-plane"></i> Subscribe</h2>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup" class=" well col-md-12">
+				<form class="form-inline" action="//zone.us13.list-manage.com/subscribe/post?u=097f48e2dd1299b610b5695f9&amp;id=08efa5098c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				    <div id="mc_embed_signup_scroll" class="col-md-8 col-sm-12">
+						<label for="mce-EMAIL">Subscribe to our mailing list</label>
+						<input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
+					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+					    	<input type="text" class="form-control" name="b_097f48e2dd1299b610b5695f9_08efa5098c" tabindex="-1" value="">
+						</div>
+				    	<div class="clear form-group">
+				    		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+				    	</div>
+				    </div>
+				</form>
 			</div>
 		</div>
 	</section>
+	<section class="footer">
+			<div class="mini-logo-white">
+				<img src="img/meccano-mini.png">
+			</div>
+	</section>
 </body>
 
+<!-- JS -->
+<script type="text/javascript" src="js/meccano.js"></script>
+<!-- //JS -->
 </html>

@@ -1,3 +1,9 @@
+section.topo .lateral{
+	width: 30px;
+	background-color: #be1e2d;
+	position: fixed;
+}
+
 section.topo .ribbon{
 	background-color: #f91;
     overflow: hidden;
@@ -58,13 +64,45 @@ section.topo .ribbon a{
 
 .overview .imagem{text-align: center;}
 
-section.footer div.col-md-12{
-	background-color: #3b3b3b;
-    height: 40px;
-    margin-top: 20px;
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px #888;
+    -moz-box-shadow: 0 0 10px #888;
+    box-shadow: 0 0 10px #888;
+    box-shadow: 0 0 10px #888;
 }
 
-section.footer div .mini-logo-white{
-	text-align: right;
-	line-height: 40px;
+input.email{width: 70%!important;}
+
+.btn-default {
+    color: #fff;
+    background-color: #ff9911;
+    border-color: #ca7400;
+    font-weight: bold;
+    /*-webkit-box-shadow: 0 0 10px #888;
+    -moz-box-shadow: 0 0 10px #888;
+    box-shadow: 0 0 10px #888;*/
+    text-shadow: 0 0 5px #444;
 }
+
+.btn-default:hover, .btn-default:active, .btn-default:focus{
+	background-color:#e88500!important;
+	color: #FFF!important;
+}
+
+section.footer .mini-logo-white{
+	width: 100%;
+    background-color: #3b3b3b;
+    text-align: right;
+    line-height: 40px;
+    position: absolute;
+}
+
+section.footer .mini-logo-white img{margin-right: 20px;}
+
+
