@@ -1,0 +1,70 @@
+section.topo .ribbon{
+	background-color: #f91;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    /*left: -50px;*/
+    top: 20px;
+    /*-webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);*/
+    -webkit-box-shadow: 0 0 10px #888;
+    -moz-box-shadow: 0 0 10px #888;
+    box-shadow: 0 0 10px #888;
+}
+
+section.topo .ribbon a{
+	border: 1px solid #faa;
+    color: #fff;
+    display: block;
+    font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 1px 0;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 5px #444;
+}
+
+.overview ul{margin-top: 20px;}
+
+.overview ul li + ul{margin-top: 0px;}
+
+.logo{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.linha{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #dfe1e4;
+    min-height: 1px;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.descricao {
+	margin-top: 40px;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.overview{
+	font-size: 18px;
+}
+
+.overview .imagem{text-align: center;}
+
+section.footer div.col-md-12{
+	background-color: #3b3b3b;
+    height: 40px;
+    margin-top: 20px;
+}
+
+section.footer div .mini-logo-white{
+	text-align: right;
+	line-height: 40px;
+}

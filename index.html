@@ -1,65 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meccano IoT</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Meccano IoT</h3>
-      </div>
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-      <div class="jumbotron">
-        <h1>Meccano</h1>
-        <p class="lead">Meccano project is a multi-purpose IoT (Internet of Things) board and software platform created by Luciano Kadoya, Rogério Biondi, Diego Osse and Talita Paschoini. Its development started in early 2014 as a closed R&D project in the Software Architecture Division, with the aim of creating a board which is robust, based on a modern microprocessor (ESP8266), cheap, easy to implement and deploy through the 750 retail stores to perform several functions</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Strating now</a></p>
-      </div>
+<head>
+<title>Meccano</title>
+<!--CSS-->
+<link href="css/bootstrap.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+<link href="css/estilo.css" media="screen, projection" rel="stylesheet" type="text/css">
+<!--//CSS-->
+<!--JS-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--//JS-->
+</head>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Open source</h4>
-          <p>Meccano is open source and it will always be.</p>
+<body>
+	<section class="topo">
+		<div class="ribbon">
+			<a href="http://github.com/meccano-iot/">Fork me on GitHub</a>
+		</div>
+	</section>
+	<section class="container ">
+		<div class="logo">
+			<img src="img/meccano.png">
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="descricao">
+			<p>Meccano project is a multi-purpose IoT (Internet of Things) board and software platform created by Luciano Kadoya, Rogério Biondi, Diego Osse and Talita Paschoini. Its development started in early 2014 as a closed R&D project in the Software Architecture Division, with the aim of creating a board which is robust, based on a modern microprocessor (ESP8266), cheap, easy to implement and deploy through the 750 retail stores to perform several functions, such as:</p>
+			<ul>
+				<li>Count the number of visitors in each store to calculate the sales/visits ratio;</li>
+				<li>Get the vote/feedback of users regarding the services;</li>
+				<li>Voice marketing;</li>
+				<li>Energy saving initiatives;</li>
+				<li>Beacons and interaction of the customer in the physical store;</li>
+				<li>Several other undisclosed applications;</li>
+			</ul>
+			<br>
+			<p>Different from other ESP8266 projects, Meccano board has been heavily tested in retail stores and adjusted to be safe against RF (radio frequency) interferences. The physical store is an inhospitable environment since there are several hundreds of electronic products, such as TVs, computers, sound and home theaters as well as electronic home appliances.
+			The project is still in its early stages and will evolve in the future. Magazine Luiza will plan the backlog and sponsor the project. It has been open-sourced because it´s the first initiative to create a board based on ESP8266 in Brazil and we are really excited with the possibilities. Magazine Luiza has a passion for innovations and contribution to the development of technology. So you are invited to join us because your support/collaboration is welcome!
+			</p>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview charact col-md-12">
+			<h2>Charateristics</h2>
+			<ul>
+				<li>Supports several devices (clients)</li>
+				<li>Customizable via plugins</li>
+				<li>Open Software e Hardware</li>
+				<li>Easy Administration of several devices</li>
+				<li>Secure</li>
+				<li>Scalable</li>
+				<li>Easy to Deploy</li>
+				<li>Integration with several solutions and products.</li>
+			</ul>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview components col-md-12">
+			<h2>Components</h2>
+			<div class="imagem">
+				<img src="img/components.png">
+			</div>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview devices col-md-12">
+			<h2>Meccano Device Clients</h2>
+			<div class="imagem">
+				<img src="img/devices.png">
+			</div>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview gateway col-md-12">
+			<h2>Gateway</h2>
+			<ul>
+				<li>Authenticate Clients</li>
+				<li>Receive data from clients</li>
+				<li>Send commands to clients</li>
+				<li>Dicards noise</li>
+				<li>May be deployed to one or more servers or in the cloud (e.g. AWS/Elasticbeanstalk)</li>
+			</ul>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview service col-md-12">
+			<h2>Service Manager</h2>
+			<ul>
+				<li>Executes general MAintenance tasks</li>
+				<li>Expansible Plugin Architeture</li>
+				<ul>
+					<li>Stream plugins</li>
+					<li>Report plugins</li>
+					<li>Worker plugins</li>
+				</ul>
+				<li>Integration</li>
+				<ul>
+					<li>S3,mazon EMR - Hadoop and Spark, Elasticache/Kibana, Tableau, Oracle Stream Explorer etc</li>
+				</ul>
+				<li>Monitoring</li>
+				<li>Notifications</li>
+				<li>Maintenance Scheduler</li>
+				<li>Failover</li>
+			</ul>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview webconsole col-md-12">
+			<h2>Webconsole</h2>
+			<div class="imagem col-md-6">
+				<img src="img/webconsole.png">
+			</div>
+			<div class="col-md-6">
+				<ul>
+					<li>User authentication and roles (users, guests and admins)</li>
+					<li>General Dashboard</li>
+					<li>Device Management</li>
+					<li>Data Activity</li>
+					<li>Reports</li>
+				</ul>
+			</div>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview board col-md-12">
+			<h2>Meccano Board</h2>
+			<div class="imagem col-md-6">
+				<img src="img/meccanoboard.png">
+			</div>
+			<div class="col-md-6">
+				<ul>
+					<li>Open Hardware</li>
+					<li>Based on ESP8266 (07 or 12)</li>
+					<li>Low cost / Production Hardware</li>
+					<li>Easy to assembly</li>
+					<li>Four Digital Ports</li>
+					<li>One Analog Port</li>
+					<li>RF filter</li>
+				</ul>
+			</div>
+		</div>
+		<div class="linha col-md-12"></div>
+		<div class="overview information col-md-12">
+			<h2>Further Information</h2>
+			<p>General Product Information</p>
+			<p><a href="http://meccano.cyclops.zone">http://meccano.cyclops.zone</a></p>
+			<p>You'll find the complete documentation and resources for software and hardware development.</p>
+			<p><a href="http://github.com/meccano-iot">http://github.com/meccano-iot</a></p>
+			<p>Docker containers, for quick deployment</p>
+			<p><a href="http://hub.docker.com/u/meccano/">http://hub.docker.com/u/meccano/</a></p>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="col-md-12">
+			<div class="mini-logo-white">
+				<img src="img/meccano-mini.png">
+			</div>
+		</div>
+	</section>
+</body>
 
-          <h4>Arduino API</h4>
-          <p>You can use Arduino API, which can dramatically reduce the redundant work for configuring and manipulating hardware. </p>
-
-          <h4>NodeMCU compatilbe</h4>
-          <p>It`s possible to use the NodeMCU lua scrits.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Lowcost Wifi</h4>
-          <p>Really cheap boads</p>
-
-          <h4>Auto Discover</h4>
-          <p>Self registetions and auto discover boads.</p>
-
-          <h4>OTA Updates</h4>
-          <p>Over the air schets updates</p>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <p>&copy; 2016 Magazine Luiza</p>
-      </footer>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </body>
 </html>
